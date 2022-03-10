@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="quote1">
+    <span>Task-1</span>
+    <hr>
+    <p>Restrict axis value within 180. Show 'warning' msg if the axis value is entered above 180 using</p>
+    <code> $event, ngModel and *ngIf</code>
+    <br><br>
+    <span>08-03-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-1</span>
+    <h1>Axis</h1>
+    <form class="example-form">
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Click here...</mat-label>
+        <input type="tel" matInput placeholder="Eg:123" (keypress)="keyPress($event)" maxlength="3"
+          [formControl]="phone" required (input)="range()" [(ngModel)]="rangevalue">
+        <mat-error *ngIf="phone.invalid">{{getErrorMessageForPhone()}}</mat-error>
+      </mat-form-field>
+      <p id="warning" *ngIf="this.rangecondition">{{range()}}</p>
+      <h4 *ngIf="this.rangecondition">{{rangeOk()}}</h4>
+    </form>
+  </div>
+
+
+  <div class="quote2">
+    <span>Task-2</span>
+    <hr>
+    <p>Change 'Arrow' color in mat-select option (RED color for example) using the below CSS code</p>
+    <code>::ng-deep .mat-select-arrow color: red;</code><br>
+    <br>
+    <span>09-03-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-2</span>
+    <br><br>
+    <h2>Basic mat-select</h2>
+    <form class="example-form">
+      <mat-form-field appearance="fill">
+        <mat-label>Favorite food</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+
+
+  <div class="quote3">
+    <span>Task-3</span>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsum!</p>
+    <code>Lorem ipsum dolor sit.</code><br>
+    <br>
+    <span>10-03-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-3</span>
+    <br><br>
+    <h2>Topic</h2>
+<span>
+  waiting for content...
+</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <ng-container matColumnDef="Axis">
+    <th mat-header-cell *matHeaderCellDef> AXIS </th>
+    <td mat-cell *matCellDef="let element; let i = index;">
+      <input matInput value="{{element.PinAxis}}" maxlength="3" type="text" class="form-control tableinputheight"
+        (keyup.enter)="NearAxis()" (keyup.ArrowLeft)="arrowleftAXIS()" (keyup)="changeValueAxis();"
+        (keyup.arrowright)="arrowrightAXIS()" (keypress)="numberOnly()" autocomplete="off" #Axis
+        [disabled]="element.OD">
+    </td>
+  </ng-container> -->

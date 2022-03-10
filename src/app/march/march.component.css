@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@500;600;700;900&display=swap');
+
+*
+{
+    text-align: center;
+    align-items: center;
+    color: black;
+}
+.container
+{
+    align-content: center;
+}
+code
+{
+    font-size: 15px;
+}
+h1
+{
+    margin-top: 50px;
+    font-size: 30px;
+}
+.quote1
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.quote1 p
+{
+    color: rgb(189, 11, 189);
+    font-weight: 700;
+}
+.quote2
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.quote2 p
+{
+    color: rgb(187, 90, 25);
+    font-weight: 700;
+}
+.quote3
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.quote3 p
+{
+    color: rgb(252, 172, 0);
+    font-weight: 700;
+}
+#warning
+{
+    font-weight: 700;
+    color: red;
+}
+h4
+{
+    font-weight: 700;
+    color: green;
+}
+.mat-label
+{
+    font-size: 16px;
+}
+::ng-deep .mat-select-arrow {
+    color: rgb(245, 53, 6);
+  }
+
+
+ 
+body
+{
+    margin: 0;
+    font-family: 'Nunito';
+}
+
+h1
+{
+    text-align: center;
+}
+
+.container
+{
+    padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.quote
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+p
+{
+    margin-top: 0;
+}
+
+span
+{
+    font-weight: bold;
+    position: relative;
+    margin-left: 15px;
+}
+
+/* span:before
+{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 10px;
+    border-bottom: 1px solid black;
+    top: 10px;
+    left: -15px;
+} */
+
+.color-quote
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    font-weight: 800;
+}
+.color-quote2
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    font-weight: 800;
+}
+.color-quote3
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #08AEEA;
+    background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);    
+    font-weight: 800;
+}
+.color-quote4
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);    
+    font-weight: 800;
+}
+
+
+
+/* @media (min-width: 550px)
+{
+    .container
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
