@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 
@@ -9,8 +9,13 @@ import { FormControl, Validators } from '@angular/forms';
 })
 
 
-export class AppComponent {
+export class AppComponent implements OnInit{
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
   title = 'AxisOnly';
-
-
+  imageSrc = 'assets/images/HomePage.png'  
+  imageAlt = 'home'
 }
+
+

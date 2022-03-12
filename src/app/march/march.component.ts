@@ -64,7 +64,16 @@ export class MarchComponent implements OnInit {
     {value: 'steak-0', viewValue: 'Steak'},
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'},
+    {value: 'Cheese', viewValue: 'Cheese'},
+    {value: 'Frier', viewValue: 'Frier'},
+    {value: 'Ginger', viewValue: 'Ginger'},
+    {value: 'Peach', viewValue: 'Peach'},
+    {value: 'sugar', viewValue: 'Sugar'},
+    {value: 'salt', viewValue: 'Salt'},
+    {value: 'egg', viewValue: 'Egg'},
+    {value: 'Rice', viewValue: 'Rice'},
+    {value: 'Cereals', viewValue: 'Cereals'},
+    {value: 'Wheat', viewValue: 'Wheat'},
   ];
-
 
 }

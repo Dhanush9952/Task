@@ -1,3 +1,4 @@
+<h1>March-2022</h1>
 <div class="container">
   <div class="quote1">
     <span>Task-1</span>
@@ -9,17 +10,17 @@
   </div>
   <div class="quote">
     <span>🔴Solution for Task-1</span>
-    <h1>Axis</h1>
-    <form class="example-form">
-      <mat-form-field class="example-full-width" appearance="outline">
-        <mat-label>Click here...</mat-label>
-        <input type="tel" matInput placeholder="Eg:123" (keypress)="keyPress($event)" maxlength="3"
-          [formControl]="phone" required (input)="range()" [(ngModel)]="rangevalue">
-        <mat-error *ngIf="phone.invalid">{{getErrorMessageForPhone()}}</mat-error>
-      </mat-form-field>
-      <p id="warning" *ngIf="this.rangecondition">{{range()}}</p>
-      <h4 *ngIf="this.rangecondition">{{rangeOk()}}</h4>
-    </form>
+    <h2> Axis<=180 </h2>
+        <form class="example-form">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Click here...</mat-label>
+            <input type="tel" matInput placeholder="Eg:123" (keypress)="keyPress($event)" maxlength="3"
+              [formControl]="phone" required (input)="range()" [(ngModel)]="rangevalue">
+            <mat-error *ngIf="phone.invalid">{{getErrorMessageForPhone()}}</mat-error>
+          </mat-form-field>
+          <p id="warning" *ngIf="this.rangecondition">{{range()}}</p>
+          <h4 *ngIf="this.rangecondition">{{rangeOk()}}</h4>
+        </form>
   </div>
 
 
@@ -51,23 +52,77 @@
   <div class="quote3">
     <span>Task-3</span>
     <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsum!</p>
-    <code>Lorem ipsum dolor sit.</code><br>
+    <p>Make Search input in mat-select mat-options visible when scrolling options using CSS</p>
+    <code>position: -webkit-sticky; <p id="warning">position: sticky; z-index: 1;</p> top: 0;</code><br>
     <br>
     <span>10-03-2022</span>
   </div>
   <div class="quote">
     <span>🔴Solution for Task-3</span>
     <br><br>
+    <h2>Sticky Input when scrolling options</h2>
+    <span>
+      <mat-select class="task03">
+        <div class="sticky">
+          <input type="text" matInput >
+        </div>
+        <mat-option>None</mat-option>
+        <mat-option *ngFor="let food of foods" [value]="food.value">{{food.viewValue}}</mat-option>
+      </mat-select>
+    </span>
+  </div>
+
+
+  <div class="quote4">
+    <span>Task-4</span>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsum!</p>
+    <code>Lorem ipsum dolor sit.</code><br>
+    <br>
+    <span>10-03-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-4</span>
+    <br><br>
     <h2>Topic</h2>
-<span>
-  waiting for content...
-</span>
+    <span>
+      Nothing
+    </span>
+  </div>
+
+  <div class="quote5">
+    <span>Task-5</span>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsum!</p>
+    <code>Lorem ipsum dolor sit.</code><br>
+    <br>
+    <span>10-03-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-5</span>
+    <br><br>
+    <h2>Topic</h2>
+    <span>
+        Nothing 
+    </span>
   </div>
 </div>
 
-
-
+<body>
+  <div class="waviy">
+    <span style="--i:1">T</span>
+    <span style="--i:2">H</span>
+    <span style="--i:3">A</span>
+    <span style="--i:4">N</span>
+    <span style="--i:5">K</span>
+    <span style="--i:6"> </span>
+    <span style="--i:7">Y</span>
+    <span style="--i:8">O</span>
+    <span style="--i:9">U</span>
+    <span style="--i:10">!</span>
+ 
+   </div>
+ </body>
 
 
 

@@ -1,36 +1,61 @@
 <div class="container">
-
-  <h1 class="d-flex justify-content-center">Task done March-2022</h1>
-  <h2 class="d-flex justify-content-center">Practice</h2>
-
+  <h1 class="d-flex justify-content-center">Training Task 2022</h1>
+  <!-- <h1 class="d-flex justify-content-center">Task done 2022</h1> -->
   <nav class="navbar navbar-expand-sm bg-light navbar-dark">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <button routerLink="march" 
-        class="m1 btn btn-light btn-outline-primary" Button>March</button>
+        <button routerLink="" mat-raised-button color="warn">Home</button>
       </li>
       <li class="nav-item">
-        <button routerLink="april" 
-        class="m1 btn btn-light btn-outline-primary" Button>April</button>
+        <button routerLink="march" mat-raised-button color="primary" class="marchbtn">March</button>
       </li>
       <li class="nav-item">
-        <button routerLink="may" 
-        class="m1 btn btn-light btn-outline-primary" Button>May</button>
+        <button routerLink="april" mat-raised-button color="primary">April</button>
       </li>
       <li class="nav-item">
-        <button routerLink="june" 
-        class="m1 btn btn-light btn-outline-primary" Button>June</button>
+        <button routerLink="may" mat-raised-button color="primary">May</button>
       </li>
       <li class="nav-item">
-        <button routerLink="july" 
-        class="m1 btn btn-light btn-outline-primary" Button>July</button>
+        <button routerLink="june" mat-raised-button color="primary">June</button>
       </li>
       <li class="nav-item">
+        <button routerLink="july" mat-raised-button color="primary">July</button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="august" mat-raised-button color="primary">August</button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="september" mat-raised-button color="primary">September</button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="october" mat-raised-button color="primary">October</button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="november" mat-raised-button color="primary">November</button>
+      </li>
+      <li class="nav-item">
+        <button routerLink="december" mat-raised-button color="primary">December</button>
+      </li>
+      <li class="nav-item">
+        <!-- <a href="https://github.com/Dhanush9952/Task">
         <button routerLink="august" 
-        class="m1 btn btn-light btn-outline-primary" Button>August</button>
+        mat-raised-button color="accent">View<img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/>Source</button>
+      </a> -->
       </li>
     </ul>
   </nav>
+  <router-outlet></router-outlet>
+  <br>
+  <div>
+    <img src="{{imageSrc}}" alt="{{imageAlt}}" class="HomePageImage" />
+    <div class="gitLink">
+      <a href="https://github.com/Dhanush9952/Task">
+        <button routerLink="https://github.com/Dhanush9952/Task" mat-raised-button color="accent">View<img
+            src="https://img.icons8.com/ios-glyphs/30/000000/github.png" />Source</button>
+      </a>
+    </div>
+    <br>
+    <h1 style="text-align: center;">Thank you!</h1>
+  </div>
 
-<router-outlet></router-outlet>
 </div>
