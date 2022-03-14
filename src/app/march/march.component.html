@@ -64,7 +64,7 @@
     <span>
       <mat-select class="task03">
         <div class="sticky">
-          <input type="text" matInput >
+          <input type="text" matInput>
         </div>
         <mat-option>None</mat-option>
         <mat-option *ngFor="let food of foods" [value]="food.value">{{food.viewValue}}</mat-option>
@@ -76,17 +76,33 @@
   <div class="quote4">
     <span>Task-4</span>
     <hr>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, ipsum!</p>
-    <code>Lorem ipsum dolor sit.</code><br>
+    <p>Auto Focus to Input Dropdown option when clicking a button using</p>
+    <code>Mat-Autocomplete and toggle dropdown() nativeElement.focus();.</code><br>
     <br>
-    <span>10-03-2022</span>
+    <span>14-03-2022</span>
   </div>
+
   <div class="quote">
     <span>🔴Solution for Task-4</span>
     <br><br>
     <h2>Topic</h2>
     <span>
-      Nothing
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input class="populationoption" #stateInput matInput placeholder="State" aria-label="State" [matAutocomplete]="auto"
+            [formControl]="stateCtrl">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option class="populationoption" (onSelectionChange)="stateInput.value !=undefined && onEnter($event)"
+              *ngFor="let state of filteredStates | async" [value]="state.name">
+              <img style="vertical-align:middle;" aria-hidden src="{{state.flag}}" height="25" />
+              <span style="font-weight: 500;">{{ state.name }}</span> |
+              <small>Population: {{state.population}}</small>
+            </mat-option>
+          </mat-autocomplete>
+        </mat-form-field>
+        <br />
+        <button mat-raised-button class="selectcountrybtn" (click)="setFocusOn()">Select Country</button>
+        </form>
     </span>
   </div>
 
@@ -103,7 +119,7 @@
     <br><br>
     <h2>Topic</h2>
     <span>
-        Nothing 
+      Nothing
     </span>
   </div>
 </div>
@@ -120,9 +136,9 @@
     <span style="--i:8">O</span>
     <span style="--i:9">U</span>
     <span style="--i:10">!</span>
- 
-   </div>
- </body>
+
+  </div>
+</body>
 
 
 

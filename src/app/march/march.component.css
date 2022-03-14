@@ -59,6 +59,11 @@ h1
     border-radius: 1em;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
+.quote4 p
+{
+    color: rgb(202, 37, 37);
+    font-weight: 700;
+}
 .quote3 p
 {
     color: rgb(252, 172, 0);
@@ -169,7 +174,15 @@ span
     background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);    
     font-weight: 800;
 }
-
+.selectcountrybtn
+{
+    color: white;
+    background: #14213d;
+}
+.example-full-width
+{
+    width: 360px;
+}
 
 ::ng-deep .task03 .mat-select-arrow {
     color: rgb(3, 3, 2);

@@ -9,6 +9,7 @@ import {MatInputModule} from '@angular/material/input';
 import { AppMaterialModule } from './app.material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MarchComponent } from './march/march.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { MarchComponent } from './march/march.component';
     MatInputModule,
     AppMaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
