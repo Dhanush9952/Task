@@ -64,6 +64,13 @@ h1
     color: rgb(202, 37, 37);
     font-weight: 700;
 }
+.quote5 p
+{
+    color: rgb(28, 248, 182);
+    background: #14213d;
+    font-weight: 500;
+    border-radius: 15px;
+}
 .quote3 p
 {
     color: rgb(252, 172, 0);
@@ -247,8 +254,15 @@ body {
     }
   }
 
+  table {
+    width: 100%;
+  }
 
-
+  b
+  {
+      font-size: 1.5em;
+      color: #08AEEA;
+  }
 /* @media (min-width: 550px)
 {
     .container

@@ -21,6 +21,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
 // since we're exporting these modules, add them to export
@@ -46,7 +47,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         MatSliderModule,
         MatProgressBarModule,
         MatCheckboxModule,
-        MatTooltipModule
+        MatTooltipModule,
+        MatMenuModule
        
     ]
 })
