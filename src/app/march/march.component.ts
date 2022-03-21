@@ -148,7 +148,7 @@ export class MarchComponent implements OnInit {
 
 
   @ViewChild('stateInput')
-  stateInput!: ElementRef; 
+  stateInput!: ElementRef;     // ElementRef is imported from angular/core 
   
   setFocusOn() { 
     this.stateInput.nativeElement.focus();
@@ -161,5 +161,11 @@ onToggleDropdown() {}
 
 displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 dataSource = ELEMENT_DATA;
+
+pdfSrc='assets/documents/angular.pdf';
+docSrc='assets/documents/trrainingcontent.docx';
+viewer= <const>'google';
+selectedType = 'docx';
+DemoDoc="http://www.africau.edu/images/default/sample.pdf"
 
 }

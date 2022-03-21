@@ -78,6 +78,8 @@
     <hr>
     <p>Auto Focus to Input Dropdown option when clicking a button using</p>
     <code>Mat-Autocomplete and toggle dropdown() nativeElement.focus();.</code><br>
+    <code>  @ViewChild('stateInput')  stateInput!: ElementRef; </code><br>
+    <code> Inside method use, this.stateInput.nativeElement.focus();</code><br>
     <br>
     <span>14-03-2022</span>
   </div>
@@ -88,6 +90,7 @@
     <h2>AutoFocus-Toggle(),focus()</h2>
     <span>
       <form class="example-form">
+        <button mat-raised-button class="selectcountrybtn" (click)="setFocusOn()">Select Country</button>
         <mat-form-field class="example-full-width">
           <input class="populationoption" #stateInput matInput placeholder="State" aria-label="State"
             [matAutocomplete]="auto" [formControl]="stateCtrl">
@@ -101,7 +104,6 @@
           </mat-autocomplete>
         </mat-form-field>
         <br />
-        <button mat-raised-button class="selectcountrybtn" (click)="setFocusOn()">Select Country</button>
       </form>
     </span>
   </div>
@@ -161,6 +163,58 @@
 
     </span>
   </div>
+
+  <div class="quote6">
+    <span>Task-6</span>
+    <hr>
+    <p>Display PDF in angular page using</p>
+    <code>ng2-pdf-viewer</code><br>
+    <br>
+    <span>20-03-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-6</span>
+    <br><br>
+    <h2>PDF view</h2>
+    <span>
+      <h2>Integrate PDF File Viewer in Angular</h2>
+          <pdf-viewer
+            [src]="pdfSrc"
+            [render-text]="true"
+            [original-size]="false"
+            style="width: 400px; height: 500px"
+          ></pdf-viewer>
+    </span>
+    </div>
+
+  <div class="quote7">
+    <span>Task-7</span>
+    <hr>
+    <p>Display Word Document DOCX in angular page using</p>
+    <code>iframe</code><br>
+    <br>
+    <span>20-03-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-7</span>
+    <br><br>
+    <h2>DOCX view</h2>
+    <span>
+      <h2>Integrate Doc File Viewer in Angular</h2>
+          <!-- <iframe
+            [src]="docSrc"
+            style="width: 400px; height: 500px"
+          ></iframe> -->
+          <div class="row">    
+            <div class="col-sm-12 btn btn-primary">    
+                Add a document Viewer in Angular  
+            </div>    
+          </div>  
+        <ngx-doc-viewer [url]="DemoDoc" [viewer]="viewer" style="width:100%;height:100vh;"></ngx-doc-viewer>
+    </span>
+    </div>
+
+
 </div>
 
 <body>

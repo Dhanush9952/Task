@@ -71,6 +71,13 @@ h1
     font-weight: 500;
     border-radius: 15px;
 }
+.quote6 p
+{
+    color: rgb(28, 248, 182);
+    background: #a5170d;
+    font-weight: 500;
+    border-radius: 15px;
+}
 .quote3 p
 {
     color: rgb(252, 172, 0);

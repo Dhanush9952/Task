@@ -10,7 +10,8 @@ import { AppMaterialModule } from './app.material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MarchComponent } from './march/march.component';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
-
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { NgxDocViewerModule } from 'ngx-doc-viewer';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     AppMaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    PdfViewerModule,
+    NgxDocViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
