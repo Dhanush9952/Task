@@ -168,4 +168,19 @@ viewer= <const>'google';
 selectedType = 'docx';
 DemoDoc="http://www.africau.edu/images/default/sample.pdf"
 
+colorInput!: any;
+
+colorValue(event: Event){
+  this.colorInput = (<HTMLInputElement>event.target).value;
+}
+
+getColor(){
+  if (this.colorInput > 60 || this.colorInput < 30) {
+    return 'red';
+  }
+  else{
+    return 'limegreen';
+  }
+}
+
 }

@@ -270,6 +270,14 @@ body {
       font-size: 1.5em;
       color: #08AEEA;
   }
+
+.colorChange{
+    border: 2px solid rgb(41, 141, 255);
+    width: 200px;
+}
+.row{
+    padding-left: 30%;
+}
 /* @media (min-width: 550px)
 {
     .container
