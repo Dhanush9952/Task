@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { map, Observable, startWith } from 'rxjs';
+import { MatSelect } from '@angular/material/select';
 
 interface Food {
   value: string;
@@ -30,10 +31,33 @@ export class State {
 })
 export class MarchComponent implements OnInit {
 
-  
-  ngOnInit(): void {
+  myControl = new FormControl();
+  options1: string[] = ['One', 'Two', 'Three'];
+  filteredOptions1!: Observable<string[]>;
+
+  @ViewChild('mySelect') mySelect!: MatSelect;
+  Open() {
+    this.mySelect.open()
+  }
+  // @ViewChild('someRef') someRef: MatSelect;
+
+  // @ViewChild(MatSelect) mySelect! : MatSelect;
+  // ngAfterViewInit() {
+  //   this.mySelect.focused = true;
+  // }
+  ngOnInit() {
+    // if(this.someRef) this.someRef.focus();
+    this.filteredOptions1 = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value)),
+    );
   }
 
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.options1.filter(option => option.toLowerCase().includes(filterValue));
+  }
   rangemaximum=180;
   rangevalue!: number;
   rangecondition!:boolean;
@@ -152,6 +176,29 @@ export class MarchComponent implements OnInit {
   
   setFocusOn() { 
     this.stateInput.nativeElement.focus();
+    
+  }
+
+  @ViewChild('starButton')
+  starButton!: ElementRef;     // ElementRef is imported from angular/core 
+  
+  callStar() { 
+    this.starButton.nativeElement.focus();
+    
+  }
+
+  @ViewChild('callStartbtn1')
+  callStartbtn1!: ElementRef;     // ElementRef is imported from angular/core 
+  
+  getButtonStart1() { 
+    this.callStartbtn1.nativeElement.focus();
+    
+  }
+  @ViewChild('callStartbtn2')
+  callStartbtn2!: ElementRef;     // ElementRef is imported from angular/core 
+  
+  getButtonStart2() { 
+    this.callStartbtn2.nativeElement.focus();
     
   }
 

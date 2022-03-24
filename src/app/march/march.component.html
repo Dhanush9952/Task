@@ -61,14 +61,32 @@
     <span>🔴Solution for Task-3</span>
     <br><br>
     <h2>Sticky Input when scrolling options</h2>
+    <h2>Autofocus when click button</h2>
     <span>
-      <mat-select class="task03">
+      <button (click)="mySelect.open()" mat-raised-button color="warn">MatSelect</button>
+      <span></span>
+      <button (click)="getButtonStart1()" mat-raised-button color="primary">Start1</button>
+      <span></span>
+      <button (click)="getButtonStart2()" mat-raised-button color="primary">MatAutoComplete</button>
+      <br><br>
+      <mat-select #mySelect class="task03">
         <div class="sticky">
-          <input type="text" matInput>
+          <input #callStartbtn1 type="text" matInput>
         </div>
         <mat-option>None</mat-option>
         <mat-option *ngFor="let food of foods" [value]="food.value">{{food.viewValue}}</mat-option>
       </mat-select>
+      <br><br>
+    <div class="row">
+      <div class="sticky " style="width: 200px; ">
+      <input matInput #callStartbtn2 [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions1 | async" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </div>
+  </div>
     </span>
   </div>
 
@@ -251,14 +269,25 @@
     <h2>Topic </h2>
     <span>
           <div class="row">    
-            <input matInput class="colorChange" type="text" [ngStyle]="{'color' : 'limegreen'}">
+            <button (click)="callStar()">Star</button>
           </div>  
           <h2>Definition...</h2>
           <div class="row">    
-            <input matInput class="colorChange" type="tel" [ngStyle]="{'color' : getColor()}" (input)="colorValue($event)">
+            <input matInput #starButton [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let option of filteredOptions1 | async" [value]="option">
+                {{option}}
+              </mat-option>
+            </mat-autocomplete>
+            <select name="" id="">
+            <input matInput #starButton [matAutocomplete]="auto">
+              <mat-option *ngFor="let option of filteredOptions1 | async" [value]="option">
+                {{option}}
+              </mat-option>
+            </select>
           </div>  
     </span>
-    </div>
+  </div>
 
 
 </div>
