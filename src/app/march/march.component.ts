@@ -1,7 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { map, Observable, startWith } from 'rxjs';
-import { MatSelect } from '@angular/material/select';
+import { MatSelect } from '@angular/material/select'; // ⭐
 
 interface Food {
   value: string;
@@ -35,10 +35,10 @@ export class MarchComponent implements OnInit {
   options1: string[] = ['One', 'Two', 'Three'];
   filteredOptions1!: Observable<string[]>;
 
-  @ViewChild('mySelect') mySelect!: MatSelect;
-  Open() {
+  @ViewChild('mySelect') mySelect!: MatSelect; //⭐
+  open() {
     this.mySelect.open()
-  }
+  } // ⭐
   // @ViewChild('someRef') someRef: MatSelect;
 
   // @ViewChild(MatSelect) mySelect! : MatSelect;

@@ -63,15 +63,15 @@
     <h2>Sticky Input when scrolling options</h2>
     <h2>Autofocus when click button</h2>
     <span>
-      <button (click)="mySelect.open()" mat-raised-button color="warn">MatSelect</button>
+<!--⭐--><button (click)="mySelect.open()" mat-raised-button color="warn">MatSelect</button><!--⭐-->
       <span></span>
       <button (click)="getButtonStart1()" mat-raised-button color="primary">Start1</button>
       <span></span>
       <button (click)="getButtonStart2()" mat-raised-button color="primary">MatAutoComplete</button>
       <br><br>
-      <mat-select #mySelect class="task03">
+<!--⭐--><mat-select #mySelect class="task03">
         <div class="sticky">
-          <input #callStartbtn1 type="text" matInput>
+          <input type="text" matInput>
         </div>
         <mat-option>None</mat-option>
         <mat-option *ngFor="let food of foods" [value]="food.value">{{food.viewValue}}</mat-option>
