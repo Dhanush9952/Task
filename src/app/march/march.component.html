@@ -258,33 +258,44 @@
   <div class="quote9">
     <span>Task-9</span>
     <hr>
-    <p>Question</p>
-    <code>code goes here...</code><br>
+    <p>Using ngModel to display input value and use currency pipe</p>
+    <code>[(ngModel)]="Amount" & | currency</code><br>
+    <code>"{{Amount}}"</code><br>
     <br>
     <span>22-03-2022</span>
   </div>
   <div class="quote">
     <span>🔴Solution for Task-9</span>
     <br><br>
+    <h2>Using ngModel and currency pipe</h2>
+    <span>  
+      <div class="row">
+        <input type="text"  matInput class="modelInput" [(ngModel)]="Amount" (keyup)="keyPress($event)">
+      </div>
+    </span>
+    <div class="row">
+      <h2 >Total : {{Amount | currency}}</h2>
+    </div>
+  </div>
+  <div class="quote10">
+    <span>Task-10</span>
+    <hr>
+    <p>Question</p>
+    <code>code goes here...</code><br>
+    <br>
+    <span>27-03-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-10</span>
+    <br><br>
     <h2>Topic </h2>
     <span>
           <div class="row">    
-            <button (click)="callStar()">Star</button>
+            <h2>content..</h2>
           </div>  
           <h2>Definition...</h2>
           <div class="row">    
-            <input matInput #starButton [matAutocomplete]="auto">
-            <mat-autocomplete #auto="matAutocomplete">
-              <mat-option *ngFor="let option of filteredOptions1 | async" [value]="option">
-                {{option}}
-              </mat-option>
-            </mat-autocomplete>
-            <select name="" id="">
-            <input matInput #starButton [matAutocomplete]="auto">
-              <mat-option *ngFor="let option of filteredOptions1 | async" [value]="option">
-                {{option}}
-              </mat-option>
-            </select>
+            <p>content...</p>
           </div>  
     </span>
   </div>

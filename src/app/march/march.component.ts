@@ -2,6 +2,7 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { map, Observable, startWith } from 'rxjs';
 import { MatSelect } from '@angular/material/select'; // ⭐
+import { FormsModule } from '@angular/forms';
 
 interface Food {
   value: string;
@@ -229,5 +230,6 @@ getColor(){
     return 'limegreen';
   }
 }
+Amount='';
 
 }
