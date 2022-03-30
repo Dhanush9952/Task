@@ -3,6 +3,7 @@ import { FormControl, Validators } from '@angular/forms';
 import { map, Observable, startWith } from 'rxjs';
 import { MatSelect } from '@angular/material/select'; // ⭐
 import { FormsModule } from '@angular/forms';
+import { MatTable } from '@angular/material/table';
 
 interface Food {
   value: string;
@@ -14,12 +15,14 @@ export interface PeriodicElement {
   weight: number;
   symbol: string;
 }
+
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
   {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
   {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
   {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
   {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
+
 ];
 export class State {
   constructor(public name: string, public population: string, public flag: string) { }
@@ -231,5 +234,39 @@ getColor(){
   }
 }
 Amount='';
+
+displayedColumns1: string[] = ['position', 'name', 'weight', 'symbol'];
+dataSource1 = [...ELEMENT_DATA];
+
+@ViewChild(MatTable) table!: MatTable<PeriodicElement>;
+
+addData() {
+  const randomElementIndex = Math.floor(Math.random() * ELEMENT_DATA.length);
+  this.dataSource.push(ELEMENT_DATA[randomElementIndex]);
+  this.table.renderRows();
+}
+
+removeData() {
+  this.dataSource.pop();
+  this.table.renderRows();
+}
+
+test! : boolean;
+num1 = 1;
+test1= true;
+
+
+// arr: string[] = ['one', 'two', 'three'];
+// cvsr = this.arr.includes('one');
+// if (cvsr = this.arr.includes('one')) {
+  
+//   this.test = true;
+// }
+
+@ViewChild('strabismusSelect', {static: false}) strabismusSelect!: MatSelect;
+
+Open() {
+//    this.strabismusSelect.focus();
+}
 
 }
