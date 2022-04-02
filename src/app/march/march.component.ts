@@ -252,21 +252,36 @@ removeData() {
 }
 
 test! : boolean;
-num1 = 1;
-test1= true;
+// num1 = 1;
+// test1= true;
 
 
-// arr: string[] = ['one', 'two', 'three'];
-// cvsr = this.arr.includes('one');
-// if (cvsr = this.arr.includes('one')) {
+arr: string[] = ['one', 'two', 'three'];
+cvsr = this.arr.includes('one');
+if (cvsr = this.arr.includes('one')) {
   
-//   this.test = true;
-// }
+  this.test = true;
+}
+
+/////////////////////
+arr1: { id: number; name: string }[] = [
+  { id: 1, name: 'Tom' },
+  { id: 2, name: 'Alfred' },
+  { id: 3, name: 'Fred' },
+];
+
+ result = this.displayedColumns.some((obj:any) => {
+  return obj.position === 1;
+});
+
+
+///////////////////////////
 
 @ViewChild('strabismusSelect', {static: false}) strabismusSelect!: MatSelect;
 
 Open() {
 //    this.strabismusSelect.focus();
 }
+
 
 }

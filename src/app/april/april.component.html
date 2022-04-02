@@ -1,2 +1,45 @@
 
-<h1>Nothing to show.¯\_(ツ)_/¯ (April)</h1>
+
+<h2>PIPES</h2>
+
+<mat-label>Date</mat-label>
+<mat-label>:</mat-label>----📆
+<p>{{ todayDate | date: 'dd-MMM-y' }}, {{ todayDate | date: 'shortTime':'UTC+5:30' }}</p>
+
+
+<mat-label>Time</mat-label>
+<mat-label>:</mat-label>---⌚
+<p>{{ todayDate | date: 'shortTime':'UTC+5:30' }}</p>
+<mat-label>Enter the Amount: </mat-label>
+
+
+<input matInput type="text" [(ngModel)]="value" maxlength="5"><br>
+<mat-label>==========</mat-label><br>
+<mat-label>Total Amount:</mat-label><br>
+<mat-label>==========</mat-label>
+<p>💲---{{value | currency : 'INR'}}</p><br>
+
+
+<!-- /////////////////////////////////////////////////////////////////// -->
+
+
+<div class="col-sm-4">
+<mat-label style="font-family:'Proxima Nova Semibold'"><strong>Receipt Date & time&nbsp;</strong></mat-label>
+<mat-label><strong>:&nbsp;</strong></mat-label>
+<mat-label>{{todayDate|date:"dd-MMM-y, H:mm a," }}</mat-label>
+</div>
+
+<div class="col-sm-4">
+<mat-label style="font-family:'Proxima Nova Semibold'"><strong>Patient Name&nbsp;</strong></mat-label>
+<mat-label style="opacity: 0"> 00000 </mat-label>
+<strong>:&nbsp;</strong>
+
+<mat-label>Dhanush K</mat-label>
+</div>
+<br>
+===================================<br>
+<span><strong>To convert First Letter to CAPS in TypeScript</strong></span>
+===================================
+<p>{{lower}}</p>
+<p>{{upper}}</p>
+<p>{{lower | titlecase}}</p>

@@ -1,5 +1,18 @@
-h1
-{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Smooch+Sans:wght@500&display=swap');
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
     text-align: center;
-    padding-top: 5%;
-}
+    font-weight: 800;
+    border: 2px solid black;
+    border-radius: 0px;
+    }
+    
+    p{
+      font-weight: 600;
+      color: blue;
+    }
+    input{
+      height: 20px;
+    }
