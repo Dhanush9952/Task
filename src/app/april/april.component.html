@@ -37,6 +37,11 @@
 <mat-label>Dhanush K</mat-label>
 </div>
 <br>
+<h3>UTC 24 Hour format :</h3>
+<p class="utc">{{todayDate|date:"dd-MMM-y, H:mm a," }}</p>
+<h3>UTC+5:30 :</h3>
+<p class="utc">{{todayDate|date:"dd-MMM-y"}}, {{todayDate|date:'shortTime':'UTC+5:30'}}</p>
+<br>
 ===================================<br>
 <span><strong>To convert First Letter to CAPS in TypeScript</strong></span>
 ===================================
