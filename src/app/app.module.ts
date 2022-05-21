@@ -13,12 +13,14 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { NgxDocViewerModule } from 'ngx-doc-viewer';
 import { AprilComponent } from './april/april.component';
+import { MayComponent } from './may/may.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MarchComponent,
-    AprilComponent
+    AprilComponent,
+    MayComponent
   ],
   imports: [
     BrowserModule,

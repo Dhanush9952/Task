@@ -4,3 +4,72 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.quote1
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.quote1 p
+{
+    color: rgb(189, 11, 189);
+    font-weight: 700;
+}
+.quote2
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.quote2 p
+{
+    color: rgb(187, 90, 25);
+    font-weight: 700;
+}
+.quote3
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.quote3 p
+{
+    color: rgb(252, 172, 0);
+    font-weight: 700;
+}
+.quote4
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+.quote4 p
+{
+    color: rgb(202, 37, 37);
+    font-weight: 700;
+}
+.quote5 p
+{
+    color: rgb(28, 248, 182);
+    background: #14213d;
+    font-weight: 500;
+    border-radius: 15px;
+}
+.quote6 p
+{
+    color: rgb(28, 248, 182);
+    background: #a5170d;
+    font-weight: 500;
+    border-radius: 15px;
+}
+.quote3 p
+{
+    color: rgb(252, 172, 0);
+    font-weight: 700;
+}
+.quote
+{
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}

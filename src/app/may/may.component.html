@@ -1,1 +1,35 @@
-<h1>Nothing to show.¯\_(ツ)_/¯ (May)</h1>
+<div class="container" (mousedown)="showZero()">
+
+<div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Enter the Amount: </span>
+    <input type="number" class="form-control" [(ngModel)]="M_Consultation" (click)="hideZero($event)" 
+    placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <div class="quote4">
+    <span>Task-1</span>
+    <hr>
+    <p>Click input hides zero, click outside of input shows zero. </p>
+    <code>using mouse click events - (mousedown), (click)</code><br>
+    <br>
+    <span>19-05-2022</span>
+  </div>
+  <div class="quote">
+    <span>🔴Solution for Task-1</span>
+    <br><br>
+    <h2>Mouse click events </h2>
+    <span>
+          <div class="row">    
+            <h2>click inside input..</h2>
+          </div>  
+          <h2>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">Enter the Amount: </span>
+              <input type="number" class="form-control" [(ngModel)]="M_Consultation" (click)="hideZero($event)" 
+              placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </h2>
+    </span>
+  </div>
+
+</div>

@@ -3,3 +3,9 @@ h1
     text-align: center;
     padding-top: 5%;
 }
+span
+{
+    font-weight: bold;
+    position: relative;
+    margin-left: 15px;
+}
